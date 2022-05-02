@@ -1,0 +1,56 @@
+.debug {border: 1px solid red}
+
+* {
+  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+  color: #565656;
+}
+
+html, body {
+  font-size: 1em;
+  margin: 15px;
+  height: 100%;
+}
+
+.display-inline {
+  display: inline-flex;
+}
+
+section.calculator {
+  width:400px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #b1f167;
+  padding: 10px;
+}
+
+section.calculator > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+section.calculator > div:hover {
+  background-color: aquamarine;
+}
+
+div#output {
+  grid-column-start:1;
+  grid-column-end:4;
+  text-align: right;
+  padding-right: 10px;
+}
+
+section.memory {
+  margin-left: 10px;
+  width: 300px;
+  height: 600px;
+  border: 1px solid #b1f167;
+}
+
+section.memory > div {
+  height: 530px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

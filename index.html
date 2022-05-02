@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Online Calculator</title>
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen" />
+    <script src="js.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Javascript calculator</h1>
+    </header>
+    <div class="display-inline">
+
+      <section class="calculator">
+        <div id="output"></div>
+        <div onmouseover="emoji(this)" onmouseout="this.innerHTML = '&nbsp;'">&nbsp;</div>
+        <div onclick="document.getElementById('output').innerHTML = ''">C</div>
+        <div onclick="display(this)">(</div>
+        <div onclick="display(this)">)</div>
+        <div onclick="display(this)">**</div>
+        <div onclick="display(this)">1</div>
+        <div onclick="display(this)">2</div>
+        <div onclick="display(this)">3</div>
+        <div onclick="display(this)">+</div>
+        <div onclick="display(this)">4</div>
+        <div onclick="display(this)">5</div>
+        <div onclick="display(this)">6</div>
+        <div onclick="display(this)">-</div>
+        <div onclick="display(this)">7</div>
+        <div onclick="display(this)">8</div>
+        <div onclick="display(this)">9</div>
+        <div onclick="display(this)">*</div>
+        <div onclick="display(this)">0</div>
+        <div onclick="display(this)">.</div>
+        <div onclick="calc()">=</div>
+        <div onclick="display(this)">/</div>
+      </section>
+      <section class="memory">
+        <h2>Memory</h2>
+        <div id="memory"></div>
+      </section>
+    </div>
+      
+  </body>
+</html>
